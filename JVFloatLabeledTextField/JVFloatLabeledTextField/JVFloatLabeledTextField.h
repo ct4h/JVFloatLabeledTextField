@@ -43,9 +43,6 @@
 IB_DESIGNABLE
 @interface JVFloatLabeledTextField : UITextField
 
-/**
- * Read-only access to the floating label.
- */
 @property (nonatomic, strong) UILabel * floatingLabel;
 
 /**
