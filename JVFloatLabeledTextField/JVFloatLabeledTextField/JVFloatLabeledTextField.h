@@ -46,7 +46,7 @@ IB_DESIGNABLE
 /**
  * Read-only access to the floating label.
  */
-@property (nonatomic, strong, readonly) UILabel * floatingLabel;
+@property (nonatomic, strong) UILabel * floatingLabel;
 
 /**
  * Padding to be applied to the y coordinate of the floating label upon presentation.
