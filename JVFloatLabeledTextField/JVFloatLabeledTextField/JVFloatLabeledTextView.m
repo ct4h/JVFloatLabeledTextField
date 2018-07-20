@@ -82,7 +82,7 @@ static CGFloat const kFloatingLabelHideAnimationDuration = 0.3f;
     _placeholderLabel.textColor = _placeholderTextColor;
     [self insertSubview:_placeholderLabel atIndex:0];
     
-    _floatingLabel = [UILabel new];
+    _floatingLabel = [self createFloatingLabel];
     _floatingLabel.alpha = 0.0f;
     _floatingLabel.backgroundColor = self.backgroundColor;
     [self addSubview:_floatingLabel];
@@ -108,6 +108,10 @@ static CGFloat const kFloatingLabelHideAnimationDuration = 0.3f;
                                              selector:@selector(layoutSubviews)
                                                  name:UITextViewTextDidEndEditingNotification
                                                object:self];
+}
+
+- (UILabel *)createFloatingLabel {
+    return [UILabel new];
 }
 
 - (void)dealloc
